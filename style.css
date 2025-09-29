@@ -1,6 +1,6 @@
 /* Подключаем шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=TT+Commons:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Manrope:wght@400&display=swap');
 /* Предотвращаем горизонтальный скролл */
 html, body {
     overflow-x: hidden !important;
@@ -26,11 +26,13 @@ main {
     justify-content: center;
     padding-top: 27px;
     padding-bottom: 45px;
+    letter-spacing: 3%;
+    
 }
 
 .header-nav li {
     color: rgba(197, 205, 243, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -87,7 +89,7 @@ main {
     border: 1px solid rgba(197, 205, 243, 1);
     color: rgba(245, 245, 245, 1);
     background: transparent;
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -196,7 +198,7 @@ margin-bottom: 110px;
     max-width: 370px;
     color: rgba(32, 36, 54, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -246,7 +248,7 @@ margin-bottom: 50px;
 
 .card h4 {
     color: rgba(61, 71, 116, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
@@ -257,7 +259,7 @@ margin-bottom: 50px;
 
 .card p {
     color: rgba(32, 36, 54, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -269,7 +271,7 @@ margin-bottom: 50px;
 
 .card h5 {
     color: rgba(61, 71, 116, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -291,7 +293,7 @@ margin-bottom: 50px;
     border: 1px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background: transparent;
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -334,7 +336,7 @@ box-sizing: border-box;
 border: 1px solid rgba(158, 172, 238, 1);
 color: rgba(61, 71, 116, 1);
 background-color: transparent;
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -396,7 +398,7 @@ text-align: left;
 .comand-contend div{
     color: rgba(32, 36, 54, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -448,7 +450,7 @@ text-align: left;
     border: 1px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background-color: transparent;
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -495,7 +497,7 @@ text-align: left;
 
 .card h4 {
     color: rgba(61, 71, 116, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
@@ -506,7 +508,7 @@ text-align: left;
 
 .card p {
     color: rgba(32, 36, 54, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -518,7 +520,7 @@ text-align: left;
 
 .card h5 {
     color: rgba(61, 71, 116, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
@@ -540,7 +542,7 @@ text-align: left;
     border: 1px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background: transparent;
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -592,7 +594,7 @@ margin-bottom: 50px;
 .howOrder-card h3{
 color: rgba(237, 240, 255, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 32px;
 font-weight: 400;
 line-height: 38px;
@@ -603,7 +605,7 @@ margin-bottom: 10px;
 .howOrder-card p{
 color: rgba(237, 240, 255, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -624,7 +626,7 @@ gap: 10;
 
 color: rgba(237, 240, 255, 1);
 background: transparent;
-font-family: TT Commons;
+
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
@@ -633,6 +635,11 @@ text-align: left;
 text-transform: uppercase;
 box-sizing: border-box;
 border: 1px solid rgba(158, 172, 238, 1);
+}
+.howOrder-card button:hover{
+background: rgba(203, 211, 248, 1);
+color: rgba(61, 71, 116, 1);
+transition:  all 500ms;
 }
 .howOrder-bottom{
     position: relative;
@@ -678,7 +685,7 @@ height: 579px;
 
 .accordion-title{
     color: rgba(61, 71, 116, 1);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
@@ -726,7 +733,7 @@ height: 579px;
     margin: 0;
     padding-bottom: 20px;
     color: rgba(61, 71, 116, 0.8);
-    font-family: TT Commons;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -750,7 +757,7 @@ height: 579px;
             background: transparent;
             border: none;
             border-bottom: 1px solid rgba(61, 71, 116, 1);
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 29px;
@@ -763,7 +770,7 @@ height: 579px;
         /* Стили для placeholder */
         input::placeholder {
             color: rgba(122, 136, 205, 1);
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 29px;
@@ -840,7 +847,7 @@ height: 579px;
             border: 1px solid rgba(158, 172, 238, 1);
             color: rgba(61, 71, 116, 1);
             background-color: transparent;
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 29px;
@@ -873,7 +880,7 @@ height: 579px;
         }
         
         .checkbox-container p{
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 14px;
             font-weight: 400;
             line-height: 17px;
@@ -893,7 +900,7 @@ height: 579px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 29px;
@@ -977,7 +984,7 @@ height: 579px;
         
         .option-text h4 {
             color: rgba(32, 36, 54, 1);
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 16px;
             font-weight: 600;
             margin: 0 0 5px 0;
@@ -985,7 +992,7 @@ height: 579px;
         
         .option-text p {
             color: rgba(32, 36, 54, 1);
-            font-family: 'TT Commons', sans-serif;
+            font-family: ''Manrope', sans-serif', sans-serif;
             font-size: 16px;
             font-weight: 400;
             line-height: 19px;
@@ -1052,7 +1059,7 @@ height: 579px;
     gap: 25px;
     color: rgba(61, 71, 116, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1062,7 +1069,7 @@ text-align: left;
  .contg{
     color: rgba(122, 136, 205, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -1091,7 +1098,7 @@ margin-bottom: 30px;
  .footer-nav li{
     color: rgba(245, 247, 255, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 17px;
@@ -1106,17 +1113,17 @@ list-style-type: none
     justify-content: space-between;
     color: rgba(245, 247, 255, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
 letter-spacing: 0%;
-margin: 10px;
+margin: 10px 0;
 text-align: left; }
  .dog a{
 color: rgba(245, 247, 255, 1);
 
-font-family: TT Commons;
+font-family: 'Manrope', sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
@@ -1455,7 +1462,7 @@ text-align: left;
         border: 1px solid rgba(197, 205, 243, 1);
         color: rgba(245, 245, 245, 1);
         background: transparent;
-        font-family: TT Commons;
+        font-family: 'Manrope', sans-serif;
         font-size: 24px;
         font-weight: 400;
         line-height: 29px;
