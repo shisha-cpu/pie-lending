@@ -1,0 +1,2044 @@
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=TT+Commons:wght@400&display=swap');
+
+/* Предотвращаем горизонтальный скролл */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(180deg, rgba(61,70,116,1), rgba(197,205,242,1) 100%);
+    min-height: 820px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 45px;
+}
+
+.header-nav li {
+    color: rgba(197, 205, 243, 1);
+    font-family: TT Commons;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    padding-left: 108px;
+    margin: 0 auto;
+    margin-top: -150px;
+    max-width: 1200px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+.main-content-text h2 {
+    background: linear-gradient(90deg, rgba(158,172,238,1), rgba(237,240,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cormorant', serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97px;
+    letter-spacing: 3%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main-content-text img{
+    position: relative;
+    top: 60px;
+    left: 250px;
+}
+.main-content-text button {
+    margin-top: 40px;
+    width: 270px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(197, 205, 243, 1);
+    color: rgba(245, 245, 245, 1);
+    background: transparent;
+    font-family: TT Commons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-content-text button:hover {
+border: 1px solid rgba(158, 172, 238, 1);
+color: rgba(61, 71, 116, 1);
+background-color: #fff;
+transition: all 500ms;
+}
+
+.hero-img {
+    display: flex;
+    position: relative; /* важное для абсолютного позиционирования сердечка */
+}
+
+.here-img-pie {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 150px;
+    z-index: 100;
+}
+
+.hero-heart-up {
+    width: 245px;
+    position: absolute;
+    top: 0px;
+    right: 0; /* справа относительно .hero-img */
+}
+.bg-main {
+    background: rgba(245, 247, 255, 1);
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    height: auto; /* Устанавливаем высоту auto, чтобы секция подстраивалась под содержимое */
+}
+
+.howOrder-bottom {
+    position: absolute;
+    width: 101px;
+    height: 109px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px; /* Поднимаем изображение над секцией */
+    z-index: 2000; /* Высокий z-index, чтобы изображение было выше других элементов */
+}
+.under-hero2{
+    position: relative;
+    top: -150px;
+    left: -3%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.under-hero1{
+    position: relative;
+    top: -250px;
+    left: 52%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.container{
+    padding: 100px 0 !important;  
+    max-width: 1200px;
+    margin: 0 auto !important;
+    z-index: 1000;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+.filisof-section{
+    margin-top: -150px !important;
+}
+.container h1 {
+    color: rgba(61, 71, 116, 1);
+
+font-family: Cormorant;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 3%;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 40px;
+text-align: center;
+}
+.container h3 {
+color: rgba(32, 36, 54, 1);
+
+font-family: Cormorant;
+font-style: italic;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 110px;
+}
+.text{
+    max-width: 370px;
+    color: rgba(32, 36, 54, 1);
+
+font-family: TT Commons;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
+.filosof-content{
+    display: flex;
+
+   gap: 150px;
+   
+}
+
+.filosof-content img{
+    max-width: 670px;
+    height: 420px;
+}
+
+.filosof-text img{
+    width: 22px;
+height: 24px;
+margin-bottom: 50px;
+}
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 370px;
+    margin-top: 40px;
+    display: flex; /* Добавляем flexbox для карточки */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    justify-content: space-between; /* Распределяем пространство, чтобы кнопка была внизу */
+    min-height: 550px; /* Минимальная высота для одинаковой высоты карточек */
+    box-sizing: border-box; /* Учитываем padding в размерах */
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.card h4 {
+    color: rgba(61, 71, 116, 1);
+    font-family: TT Commons;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -3%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgba(32, 36, 54, 1);
+    font-family: TT Commons;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px; /* Уменьшаем отступ, чтобы не растягивать */
+    flex-grow: 1; /* Позволяем параграфу занимать доступное пространство */
+}
+
+.card h5 {
+    color: rgba(61, 71, 116, 1);
+    font-family: TT Commons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px; /* Уменьшаем отступ */
+}
+
+.card button {
+    width: 223px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(158, 172, 238, 1);
+    color: rgba(61, 71, 116, 1);
+    background: transparent;
+    font-family: TT Commons;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 12%;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-start; /* Выравнивание кнопки по началу */
+}
+
+.card button:hover {
+    background: rgba(203, 211, 248, 1);
+    color: rgba(61, 71, 116, 1);
+    transition: all 500ms;
+}
+.slider-imgages{
+    display: flex;
+
+    width: 270px;
+height: 370px;
+gap: 30px;
+margin-bottom: 40px;
+}
+.slider-image-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.slider-buy{
+/* bt_m_order */
+width: 270px;
+height: 58px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 15px 40px 15px 40px;
+box-sizing: border-box;
+border: 1px solid rgba(158, 172, 238, 1);
+color: rgba(61, 71, 116, 1);
+background-color: transparent;
+font-family: TT Commons;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 12%;
+text-align: left;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+
+.slider-images-action{
+    display: flex;
+
+}
+.actionButton{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.slider-buy:hover{
+    border: 1px solid rgba(158, 172, 238, 1);
+color: rgba(61, 71, 116, 1);
+background-color: #fff;
+transition: all 500ms;
+}
+.comand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comand-contend{
+    display: flex;
+    gap: 65px;
+    margin-top: 50px;
+}
+.comand-img{
+    width: 970px;
+
+}
+.comand-contend p{
+    color: rgba(32, 36, 54, 1);
+    min-width: 40%;
+    
+font-family: Cormorant;
+font-style: italic;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: left;
+}
+.comand-hero{
+    max-width: 60px;
+    position: relative;
+    top: 20px;
+    left: 20%;
+}
+
+.comand-contend div{
+    color: rgba(32, 36, 54, 1);
+
+font-family: TT Commons;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+}
+    .slider-container {
+        width: 100%;
+        overflow: visible; /* Позволяем видеть части следующего фото */
+        margin-bottom: 40px;
+        touch-action: pan-x; /* Разрешаем только горизонтальную прокрутку */
+    }
+
+.slider-images {
+    width: 100%;
+    position: relative;
+}
+
+    .slider-track {
+        display: flex;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Более плавная анимация */
+        gap: 30px;
+        will-change: transform; /* Оптимизация для GPU */
+    }
+
+.slider-img {
+    width: calc((100% - 90px) / 4); /* 90px = 30px gap * 3 gaps between 4 images */
+    height: 370px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.slider-image-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-buy {
+    width: 270px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(158, 172, 238, 1);
+    color: rgba(61, 71, 116, 1);
+    background-color: transparent;
+    font-family: TT Commons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.slider-images-action {
+    display: flex;
+    gap: 10px;
+}
+
+.actionButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slider-buy:hover {
+    border: 1px solid rgba(158, 172, 238, 1);
+    color: rgba(61, 71, 116, 1);
+    background-color: #fff;
+    transition: all 500ms;
+}
+
+/* Стили для карточек (оставлены без изменений) */
+.card {
+    max-width: 370px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 550px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.card h4 {
+    color: rgba(61, 71, 116, 1);
+    font-family: TT Commons;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -3%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgba(32, 36, 54, 1);
+    font-family: TT Commons;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card h5 {
+    color: rgba(61, 71, 116, 1);
+    font-family: TT Commons;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card button {
+    width: 223px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(158, 172, 238, 1);
+    color: rgba(61, 71, 116, 1);
+    background: transparent;
+    font-family: TT Commons;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.card button:hover {
+    background: rgba(203, 211, 248, 1);
+    color: rgba(61, 71, 116, 1);
+    transition: all 500ms;
+}
+
+
+.howOrder{
+    background: rgba(61, 71, 116, 1);
+    z-index: 100;
+}
+.howOrder h1{
+    color: rgba(237, 240, 255, 1);
+}
+
+.howOrder-right-heart{
+    width: 190px;
+    position: relative;
+    left: 80%;
+
+  top: -100px !important    ;
+}
+.howOrder-left-heart{
+    width: 55px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 150px;
+}
+.howOrder-card img{
+    width: 68px;
+height: 68px;
+margin-bottom: 50px;
+}
+.howOrder-content{
+    margin-top: -170px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.howOrder-card h3{
+color: rgba(237, 240, 255, 1);
+
+font-family: TT Commons;
+font-size: 32px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: -3%;
+text-align: left;
+margin-bottom: 10px;
+}
+.howOrder-card p{
+color: rgba(237, 240, 255, 1);
+
+font-family: TT Commons;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 20px;
+}
+.howOrder-card button{
+/* bt_m_order */
+width: 246px;
+height: 41px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+
+color: rgba(237, 240, 255, 1);
+background: transparent;
+font-family: TT Commons;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 12%;
+text-align: left;
+text-transform: uppercase;
+box-sizing: border-box;
+border: 1px solid rgba(158, 172, 238, 1);
+}
+.howOrder-bottom{
+    position: relative;
+    width: 101px;
+height: 109px;
+left: 50%;
+margin-top: -60px;
+}
+.faq-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.faq-content img{
+width: 470px;
+height: 380px;
+    
+}
+.contact-content img{
+    width: 470px;
+height: 579px;
+}
+
+.accordion img{
+    width: 22px;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+.accordion-item{
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 550px;
+    margin-bottom: 10px;
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.accordion-title{
+    color: rgba(61, 71, 116, 1);
+    font-family: TT Commons;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -3%;
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+.accordion-toggle{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.accordion-icon-open,
+.accordion-icon-close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.accordion-icon-open{
+    opacity: 0;
+}
+
+.accordion-icon-close{
+    opacity: 1;
+}
+
+.accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-text{
+    margin: 0;
+    padding-bottom: 20px;
+    color: rgba(61, 71, 116, 0.8);
+    font-family: TT Commons;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Активное состояние */
+.accordion-item.active .accordion-icon-open{
+    opacity: 1;
+}
+
+.accordion-item.active .accordion-icon-close{
+    opacity: 0;
+}
+
+.accordion-item.active .accordion-content{
+    max-height: 500px; /* Достаточно для контента */
+}
+ /* Базовые стили для всех input элементов */
+        input {
+            margin: 20px 0;
+            padding: 5px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(61, 71, 116, 1);
+            font-family: 'TT Commons', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: -3%;
+            text-align: left;
+            color: rgba(122, 136, 205, 1);
+            outline: none; /* Убираем стандартную обводку */
+        }
+        
+        /* Стили для placeholder */
+        input::placeholder {
+            color: rgba(122, 136, 205, 1);
+            font-family: 'TT Commons', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: -3%;
+            text-align: left;
+            opacity: 1; /* Убедимся, что placeholder непрозрачный */
+        }
+        
+        /* Стили для чекбоксов */
+        input[type="checkbox"] {
+            min-width: 30px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgba(61, 71, 116, 1);
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        /* Активное состояние чекбокса */
+        input[type="checkbox"]:checked {
+            background: rgba(61, 71, 116, 1);
+        }
+        
+        /* Галочка для отмеченного чекбокса */
+        input[type="checkbox"]:checked::after {
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .contact-content{
+            display: flex;
+            gap: 130px;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .arrow img{
+            max-width: 20px;
+            max-height: 20px;
+        }
+        
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .flex input{
+            width: 45%;
+        }
+        
+        .fotm-button{
+            width: 270px;
+            height: 58px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            padding: 15px 40px 15px 40px;
+            box-sizing: border-box;
+            border: 1px solid rgba(158, 172, 238, 1);
+            color: rgba(61, 71, 116, 1);
+            background-color: transparent;
+            font-family: 'TT Commons', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 12%;
+            text-align: left;
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            outline: none; /* Убираем стандартную обводку */
+        }
+        
+        .fotm-button:hover{
+            background: rgba(203, 211, 248, 1);
+            color: rgba(61, 71, 116, 1);
+            transition: all 500ms;
+        }
+        
+        /* Стили для кастомного select */
+        .custom-select {
+            position: relative;
+            margin-bottom: 20px;
+            z-index: 1000; /* Добавляем z-index */
+        }
+        .checkbox-container{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        
+        .checkbox-container p{
+            font-family: 'TT Commons', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            color: #333;
+        }
+        
+        .checkbox-container p a{
+            color: rgba(61, 71, 116, 1);
+        }
+        
+        .select-header {
+            padding: 25px 0;
+            border-bottom: 1px solid rgba(61, 71, 116, 1);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'TT Commons', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: -3%;
+            text-align: left;
+        }
+        
+        .select-header .placeholder {
+            color: rgba(122, 136, 205, 1);
+        }
+        
+        .select-header .arrow {
+            transition: transform 0.3s;
+        }
+        
+        .select-options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: transparent;
+            max-height: 400px; /* Ограничиваем максимальную высоту */
+            overflow: hidden; /* Убираем скролл у контейнера */
+        
+        }
+        
+        .custom-select.open .select-options {
+            display: block;
+        }
+        
+        .custom-select.open .select-header .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .options-background {
+            background: rgba(194, 200, 227, 1);
+            opacity: 0.8;
+            width: 100%;
+            height: 519px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .options-list {
+            max-height: 519px;
+            overflow-y: auto;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .option-item {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(61, 71, 116, 0.3);
+            cursor: pointer;
+        }
+        
+        .option-item:hover {
+            background: rgb(255, 255, 255);
+        }
+        
+        .option-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .option-content img {
+            width: 75px;
+            height: 50px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        
+        .option-text {
+            flex: 1;
+        }
+        
+        .option-text h4 {
+            color: rgba(32, 36, 54, 1);
+            font-family: 'TT Commons', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+        
+        .option-text p {
+            color: rgba(32, 36, 54, 1);
+            font-family: 'TT Commons', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin: 0;
+        }
+        
+        .selected-value {
+            display: none;
+        }
+
+
+
+        .contact-img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-100px); /* Поднимаем изображение */
+            margin-bottom: -50px; /* Компенсируем подъем */
+            z-index: 10;
+            margin-left: 65svw;
+        }
+        
+        #contacts {
+            overflow: visible; /* Разрешаем выходить за границы */
+        }
+        
+        .contacts {
+            position: relative;
+            z-index: 5;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .contact-img {
+                width: 150px;
+                transform: translateY(-80px);
+                margin-bottom: -40px;
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            .contact-img {
+                width: 120px;
+                transform: translateY(-60px);
+                margin-bottom: -30px;
+            }
+            .messangers{
+                margin: 20px;
+            }
+        }
+.contacts{
+    margin-top: -150px !important;
+}
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ .contactstext{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: rgba(61, 71, 116, 1);
+
+font-family: TT Commons;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+ }    
+ .contg{
+    color: rgba(122, 136, 205, 1);
+
+font-family: TT Commons;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+ }   
+
+ footer{
+    background: rgba(61, 71, 116, 1);
+
+ }
+ .footer-main{
+    display: flex;
+    justify-content: space-between;
+ }
+  .footer-main img{
+/* Lab_cake_logo */
+width: 128px;
+height: 96px;
+ }
+ .footer-nav{
+display: flex;
+gap: 60px;
+margin-bottom: 30px;
+ }
+ .footer-nav li{
+    color: rgba(245, 247, 255, 1);
+
+font-family: TT Commons;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 3%;
+text-align: left;
+text-transform: uppercase;
+white-space: nowrap;
+list-style-type: none
+ }
+ .dog{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(245, 247, 255, 1);
+
+font-family: TT Commons;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0%;
+margin: 10px;
+text-align: left; }
+ .dog a{
+color: rgba(245, 247, 255, 1);
+
+font-family: TT Commons;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+ }
+/* Медиа-запросы для адаптивности */
+
+/* Большие экраны (1200px и выше) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Планшеты и небольшие ноутбуки (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        padding: 80px 20px !important;
+    }
+    .option-content img {
+        width:75px !important;
+    }
+    .main-content {
+
+        gap: 30px;
+    }
+   .accordion-hero-img{
+    display: none;
+   }
+    
+    .main-content-text h2 {
+        font-size: 70px;
+        line-height: 85px;
+    }
+    
+    .filosof-content {
+        gap: 80px;
+    }
+    
+    .filosof-content img {
+        max-width: 550px;
+        height: 350px;
+    }
+    
+    .comand-img {
+        width: 100%;
+    }
+    
+    .contact-content {
+        gap: 80px;
+    }
+    
+    .contact-content img {
+        width: 400px;
+        height: 500px;
+    }
+    
+    .slider-img {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+/* Планшеты (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        padding: 60px 20px !important;
+    }
+    
+    .header-nav {
+        gap: 25px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: none !important;
+    }
+    
+    .header-nav li {
+        font-size: 12px;
+    }
+    
+    .main-content {
+
+        flex-direction: column;
+        text-align: center;
+        margin-top: -100px;
+    }
+    
+    .main-content-text h2 {
+        font-size: 42px !important; 
+        line-height: 72px;
+        text-align: center;
+    }
+    
+    .main-content-text img {
+        top: 40px;
+        left: 10%;
+        transform: translateX(-50%);
+    }
+    
+    .hero-img {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .here-img-pie {
+        margin-top: 100px;
+        max-width: 80%;
+    }
+    .placeholder{
+        color: rgba(122, 136, 205, 1);
+
+       
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -3%;
+        text-align: left;
+    }
+
+    
+    .container h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .container h3 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 80px;
+    }
+    
+    .filosof-content {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .filosof-content img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .filosof-text {
+        text-align: left;
+    }
+    
+    .catalog-cards {
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .card {
+        max-width: 320px;
+        min-height: 500px;
+    }
+    
+    .comand-contend {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .comand-contend p {
+        text-align: center;
+    }
+    
+    .howOrder-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .howOrder-card {
+        text-align: center;
+    }
+    
+    .faq-content {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .faq-content img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .contact-content img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .flex {
+        flex-direction: column;
+    }
+    
+    .flex input {
+        width: 100%;
+    }
+    
+    .options-background {
+        width: 100%;
+    }
+    
+    .footer-main {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .footer-main img{
+        margin:  0 auto;
+    }
+    .footer-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-nav{
+       flex-direction: column;
+    }
+    .dog{
+        margin-left: 0px;
+    }
+    .dog {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .slider-img {
+        width: calc((100% - 30px) / 2);
+    }
+    
+    .under-hero1 {
+        left: 70%;
+    }
+    
+    .howOrder-right-heart {
+        left: 70%;
+    }
+}
+
+/* Мобильная версия - скрываем десктопную версию и показываем мобильную */
+.mobile-main-content {
+    display: none;
+}
+
+/* Мобильная версия слайдера - скрываем десктопную версию */
+.mobile-slider-controls {
+    display: none;
+}
+
+/* Мобильные устройства (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 40px 15px !important;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Предотвращаем горизонтальный скролл на мобильных */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+    }
+    
+    * {
+        max-width: 100%;
+    }
+    
+    /* Скрываем десктопную версию */
+    .main-content {
+        display: none;
+    }
+    
+    /* Показываем мобильную версию */
+    .mobile-main-content {
+        display: block;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .mobile-title {
+        background: linear-gradient(90deg, rgba(158,172,238,1), rgba(237,240,255,1) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Cormorant', serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 3%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    
+    .mobile-hero-img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    .mobile-hero-img .here-img-pie {
+        max-width: 90%;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .mobile-hero-img .hero-heart-up {
+        width: 250px;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+
+    .mobile-button {
+        width: 270px;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        border: 1px solid rgba(197, 205, 243, 1);
+        color: rgba(245, 245, 245, 1);
+        background: transparent;
+        font-family: TT Commons;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 12%;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    .mobile-button:hover {
+        border: 1px solid rgba(158, 172, 238, 1);
+        color: rgba(61, 71, 116, 1);
+        background-color: #fff;
+        transition: all 500ms;
+    }
+    
+    .logo img{
+        width: 109px;
+        height: 83px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    
+    .header-nav li {
+        font-size: 11px;
+    }
+
+    
+    .main-content-text h2 {
+        font-size: 48px;
+        line-height: 58px;
+        text-align: left;
+    }
+    
+
+    
+    .here-img-pie {
+        margin-top: 80px;
+        max-width: 90%;
+    }
+    
+
+    .container h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    .container h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .card {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    
+    .slider-buy {
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+        display: none;
+    }
+    
+    .accordion-title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    input, input::placeholder {
+        font-size: 20px;
+    }
+
+    
+    .contactstext {
+        font-size: 20px;
+    }
+    
+    .contg {
+        font-size: 20px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .slider-img {
+        width: calc(100vw - 100px); /* Показываем еще больше следующего фото */
+        flex-shrink: 0;
+        margin-right: 10px; /* Уменьшаем отступ между фото */
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .slider-img:last-child {
+        margin-right: 0;
+    }
+    
+    .slider-track {
+        gap: 0;
+        padding: 0 20px; /* Отступы по бокам */
+    }
+    
+    /* Скрываем десктопные кнопки слайдера */
+    .slider-image-buttons {
+        display: none;
+    }
+    
+    /* Показываем мобильную версию */
+    .mobile-slider-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .mobile-slider-buy {
+        display: none; /* Скрываем кнопку на мобильных устройствах */
+    }
+    
+    .slider-progress {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .progress-bar {
+        width: 200px;
+        height: 3px;
+        background: rgba(223, 224, 230, 1);
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    
+    .progress-fill {
+        height: 100%;
+        background: rgba(153, 226, 141, 1);
+        width: 0%;
+        transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 2px;
+    }
+    
+    /* Улучшаем отзывчивость для мобильных устройств */
+    .slider-container {
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        touch-action: pan-x;
+        user-select: none;
+        overflow: visible; /* Позволяем видеть части следующего фото */
+    }
+    
+    .slider-track {
+        cursor: grab;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .slider-track:active {
+        cursor: grabbing;
+    }
+    
+    /* Дополнительные улучшения для мобильных */
+
+    
+    .slider-track {
+        transform: translateZ(0); /* Включаем аппаратное ускорение */
+        backface-visibility: hidden;
+    }
+    
+    /* Улучшаем видимость следующего фото */
+    .slider-container {
+        overflow: visible; /* Позволяем видеть части следующего фото */
+    }
+    
+    .slider-images {
+        overflow: visible;
+    }
+    
+
+    .under-hero2{
+        width: 40%;
+        position: relative; 
+        top: -120px;
+    }
+    .under-hero1{
+        width: 15%;
+        position: relative;
+        top: -130px;
+        left: 40%;
+    }
+    .howOrder-left-heart
+   {
+    left: 30%;
+    }
+    .howOrder-right-heart{
+        top: 300px !important;
+        left: 50%;
+        z-index: -1;
+    }
+    .howOrder-card img{
+        display: flex;
+        justify-content: flex-start;
+    }
+ 
+}
+
+/* Маленькие мобильные устройства (до 575px) */
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 60px 20px !important;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Дополнительная защита от горизонтального скролла */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+        position: relative;
+    }
+    
+    /* Ограничиваем ширину всех элементов */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .here-img-pie{
+      /* Торт_hero */
+width: 100% !important;
+height: 271px;
+    }
+    .mobile-hero-img .hero-heart-up{
+        /* Lab_cake_logo */
+width: 140px;
+
+position: absolute;
+top: -30px;
+left: 70%;
+    }
+    /* Скрываем десктопную версию */
+    .main-content {
+        display: none;
+    }
+    .mobile-main-content img{
+        /* Vector */
+width: 36px;
+height: 39px;
+position: relative;
+top: 30px;
+right: 10px;
+    }
+    /* Показываем мобильную версию */
+    .mobile-main-content {
+        display: block;
+        padding: 0 10px;
+    }
+    
+    .mobile-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 30px;
+text-align: left;
+    }
+    
+    .mobile-hero-img  {
+        min-width: 100%;
+    }
+    
+
+    .header-nav {
+        gap: 10px;
+    }
+    
+    .header-nav li {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    
+
+    
+    .container h1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .container h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .card h4 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .card h5 {
+        font-size: 20px;
+    }
+    
+
+    
+    .slider-buy {
+        width: 200px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .comand-contend p {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .comand-contend div {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .howOrder-card h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    .howOrder-card p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .howOrder-card button {
+        width: 200px;
+        font-size: 16px;
+    }
+    
+    .accordion-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .accordion-text {
+        font-size: 16px;
+    }
+    
+    input, input::placeholder {
+        font-size: 18px;
+    }
+
+    
+    .checkbox-container p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .contactstext {
+        font-size: 18px;
+    }
+    
+    .contg {
+        font-size: 18px;
+    }
+    
+    .footer-nav {
+        gap: 15px;
+    }
+    
+    .footer-nav li {
+        font-size: 12px;
+    }
+    
+    .dog {
+        font-size: 14px;
+    }
+    
+    .dog a {
+        font-size: 14px;
+    }
+    
+    /* Адаптация для очень маленьких экранов */
+    .main-content-text img {
+        width: 40px;
+        height: auto;
+        top: 30px;
+    }
+
+    
+    .comand-hero {
+        max-width: 40px;
+        left: 10%;
+    }
+    
+    .howOrder-bottom {
+        width: 80px;
+        height: auto;
+        z-index: 1000;
+    }
+}
+
+/* Очень маленькие устройства (до 320px) */
+@media screen and (max-width: 320px) {
+    /* Максимальная защита от горизонтального скролла */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+        position: relative;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Скрываем десктопную версию */
+    .main-content {
+        display: none;
+    }
+    
+    /* Показываем мобильную версию */
+    .mobile-main-content {
+        display: block;
+        padding: 0 5px;
+    }
+    
+    .mobile-title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+
+    }
+    
+
+    
+    .mobile-button {
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .mobile-hero-img .hero-heart-up {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    
+    .header-nav {
+        gap: 8px;
+    }
+    
+    .header-nav li {
+        font-size: 9px;
+    }
+    
+    .container h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .container h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .slider-buy {
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+
+}
+
+/* Портретная ориентация */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .main-content {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+    
+    .hero-img {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных */
+@media screen and (max-width: 991px) and (orientation: landscape) {
+    .main-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .main-content-text h2 {
+        text-align: left;
+    }
+    
+    .main-content-text img {
+        left: 200px;
+        transform: none;
+    }
+}
+
+/* Высокие экраны */
+@media screen and (min-height: 1000px) {
+    main {
+        min-height: 900px;
+    }
+    
+    .main-content {
+        margin-top: -200px;
+    }
+}
+
+/* Очень широкие экраны */
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .main-content {
+        max-width: 1400px;
+    }
+    
+    .main-content-text h2 {
+        font-size: 90px;
+        line-height: 110px;
+    }
+}
+
+.howOrder-bottom {
+    position: absolute;
+    width: 101px;
+    height: 109px;
+    top: auto; /* Сбрасываем top */
+    bottom: calc(100% - 60px); /* Размещаем над секцией */
+    left: 50%;
+    transform: translateX(-50%);
+   
+
+}
+.howOrder-container{
+    background-color: red !important;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+/* Для родительского контейнера */
+.bg-main:has(.howOrder-bottom) {
+    position: relative;
+    height: 0; /* Убираем высоту */
+    overflow: visible; /* Позволяем элементу выходить за границы */
+}
+
+.howOrder {
+    position: relative;
+    z-index: 100;
+}
+.faq{
+    padding-top:50px;
+}
+
+
+

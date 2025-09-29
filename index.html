@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатория тортов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <style>
+        /* Добавляем стили чтобы ссылки не меняли цвет */
+        .header-nav a, .footer-nav a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .header-nav a:hover, .footer-nav a:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        /* Стиль для плавной прокрутки */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="header-nav">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#how-order">Как сделать заказ</a></li>
+                <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                <li><a href="#individual-order">Индивидуальный заказ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </nav>
+        </header>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+        <div class="main-content">
+            <div class="main-content-text">
+                <img src="./img/hero-heart.svg" alt="">
+                <h2>
+                    Вкус <br>
+                    праздника<br> в каждом <br>
+                    кусочке
+                </h2>
+                <button onclick="location.href='#individual-order'">
+                    Заказать торт
+                </button>
+            </div>
+            <div class="hero-img">
+                <img class="hero-heart-up" src="./img/Lab_cake_logo.png" alt="">
+                <img class="here-img-pie" src="./img/hero.png" alt="">
+            </div>
+        </div>
+        
+        <!-- Мобильная версия с правильным порядком -->
+        <div class="mobile-main-content">
+            <img src="./img/hero-heart.svg" alt="">
+            <h2 class="mobile-title">
+                Вкус <br>
+                праздника<br> в каждом <br>
+                кусочке
+            </h2>
+            <div class="mobile-hero-img">
+                <img class="hero-heart-up" src="./img/Lab_cake_logo.png" alt="">
+                <img class="here-img-pie" src="./img/hero.png" alt="">
+            </div>
+            <button class="mobile-button" onclick="location.href='#individual-order'">
+                Заказать торт
+            </button>
+        </div>
+    </main>
+    <div class="under-hero">
+        <img class="under-hero2" src="img/under-hero2.svg" alt="">
+        <img class="under-hero1" src="img/under-hero1.svg" alt="">
+    </div>  
+
+    <section class="filisof-section">
+        <div class="container">
+            <h1>Философия</h1>
+            <h3>Лаборатория тортов — это кондитерская тортов <br> для особого случая от «Анровa»</h3>
+            <div class="filosof-content">
+                <img src="./img/shokoladnyij.png" alt="">
+                <div class="filosof-text">
+                    <img src="./img/filisif-heart.svg" alt="">
+                    <div class="text">
+                        Мы рады предложить вам вкуснейшие торты на любой вкус. Они придутся по душе как сладкоежкам, так и гурманам-критикам. Вся наша продукция изготовлена из натуральных ингредиентов, без использования химии и консервантов. <br><br> Кондитерское искусство в наши дни стало модным трендом. Каждый хочет заполучить на своё торжество торт, как с журнальной обложки. Мы рады предложить вам простые, но утончённые, классические и современные шедевры кондитерского мастерства.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-main" id="catalog">
+        <div class="container">
+            <h1>Каталог</h1>
+            <div class="catalog-cards">
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Красный бархат</h4>
+                    <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                    <h5>1800 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/2.png" alt="">
+                    <h4>Черничный чизкейк</h4>
+                    <p>Воздушный сливочно-сырный мусс с прослойкой из черничного желе на шоколадно-песочном сабле.</p>
+                    <h5>2000 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/3.png" alt="">
+                    <h4>Черемуховый</h4>
+                    <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                    <h5>1500 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Черничный чизкейк</h4>
+                    <p>Воздушный сливочно-сырный мусс с прослойкой из черничного желе на шоколадно-песочном сабле.</p>
+                    <h5>2000 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Черемуховый</h4>
+                    <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                    <h5>1500 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Красный бархат</h4>
+                    <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                    <h5>1800 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Красный бархат</h4>
+                    <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                    <h5>1800 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Красный бархат</h4>
+                    <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                    <h5>1800 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+                <div class="card">
+                    <img src="./img/1.png" alt="">
+                    <h4>Красный бархат</h4>
+                    <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                    <h5>1800 ₽</h5>
+                    <button onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-main">
+        <div class="container">
+            <h1>индивидуальный декор</h1>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <div class="slider-track">
+                        <img class="slider-img" src="./img/Rectangle 43.png" alt="">
+                        <img class="slider-img" src="./img/Rectangle 44.png" alt="">
+                        <img class="slider-img" src="./img/Rectangle 45.png" alt="">
+                        <img class="slider-img" src="./img/Rectangle 46.png" alt="">
+                        <img class="slider-img" src="./img/Rectangle 43.png" alt="">
+                        <img class="slider-img" src="./img/Rectangle 44.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-image-buttons">
+                <div></div>
+                <button class="slider-buy" onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                <div class="slider-images-action">
+                    <button class="actionButton prev-button">
+                        <img src="./img/left.svg" alt="">
+                    </button>
+                    <button class="actionButton next-button">
+                        <img src="./img/right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Мобильная версия с прогресс-баром -->
+            <div class="mobile-slider-controls">
+                <button class="mobile-slider-buy" onclick="location.href='#individual-order'">ЗАКАЗАТЬ ТОРТ</button>
+                <div class="slider-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container comand">
+            <h1>Команда</h1>
+            <img class="comand-hero" src="./img/under-hero1.svg" alt="">
+            <img class="comand-img" src="./img/comand.png" alt="">
+            <div class="comand-contend">
+                <p>Лаборатория тортов — это кондитерская тортов для особого случая от рестора «Анров»</p>
+                <div class="">
+                    Наши мастера создают как привычные бисквитные, так и максимально лёгкие муссовые торты с правильными гастрономическими сочетаниями. Сейчас особенно популярны стильные торты с нотками минимализма и мы всецело поддерживаем этот тренд. Особым спросом пользуется велюровое покрытие, которое напоминает благородный бархат — для его создания используется бельгийский шоколад. Не менее популярно покрытие с зеркальным блеском, подчёркивающим совершенство формы. Мы рекомендуем украшать торты ягодами или шоколадным декором.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="howOrder" id="how-order">
+        <div class="container howOrder">
+            <h1>Как сделать заказ </h1>
+            <img class="howOrder-left-heart" src="./img/filisif-heart.svg" alt="">
+            <img class="howOrder-right-heart" src="img/under-hero2.svg" alt="">
+            <div class="howOrder-content">
+                <div class="howOrder-card">
+                    <img src="./img/1)svg.svg" alt="">
+                    <h3>Выберите торт в каталоге</h3>
+                    <p>Просмотрите каталог и найдите торт, который вам нравится. В описании указаны состав, размер и стоимость. Если вам требуется индивидуальный заказ, то заполните форму — ссылка на форму</p>
+                    <button onclick="location.href='#individual-order'">Заказать форму</button>
+                </div>
+                <div class="howOrder-card">
+                    <img src="./img/2(.svg" alt="">
+                    <h3>Оформите заказ на сайте</h3>
+                    <p>Добавьте торт в корзину, укажите дату, время и адрес доставки. Если вам удобнее забрать торт самостоятельно, отметьте это в комментарии к заказу.</p>
+                   
+                </div>
+                <div class="howOrder-card">
+                    <img src="./img/3(.svg" alt="">
+                    <h3>Заберите торт или дождитесь доставки</h3>
+                    <p>Если вы выбрали самовывоз, заказ будет готов в указанное время. При доставке наш курьер привезёт торт прямо к вашему порогу.</p>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="bg-main">
+    <img class="howOrder-bottom" src="./img/under-hero1.svg" alt="">
+</section>
+
+    <section class="bg-main faq" id="faq">
+        <div class="container">
+            <h1>Часто задаваемые <br> вопросы</h1>
+            <h3>Ответы на популярные вопросы</h3>
+
+            <div class="faq-content">
+                <div class="accordion">
+                    <img  class="accordion-hero-img" src="./img/hero-heart.svg" alt="">
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-title">Есть ли доставка</div>
+                            <button class="accordion-toggle">
+                                <img class="accordion-icon-close" src="./img/close.svg" alt="Закрыть">
+                                <img class="accordion-icon-open" src="./img/open.svg" alt="Открыть">
+                            </button>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="accordion-text">
+                                Мы принимаем заказ на торты за 3 дня до желаемой даты. Если до вашего торжества осталось менее 3 дней— позвоните нам +7 8182 43-41-41, и мы предложим тортик из наличия.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-title">Какой срок изготовления торта?</div>
+                            <button class="accordion-toggle">
+                                <img class="accordion-icon-close" src="./img/close.svg" alt="Закрыть">
+                                <img class="accordion-icon-open" src="./img/open.svg" alt="Открыть">
+                            </button>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="accordion-text">
+                                Средний срок изготовления торта составляет 3-5 дней. Для сложных заказов может потребоваться до 7 дней.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-title">Можно ли изменить дизайн торта?</div>
+                            <button class="accordion-toggle">
+                                <img class="accordion-icon-close" src="./img/close.svg" alt="Закрыть">
+                                <img class="accordion-icon-open" src="./img/open.svg" alt="Открыть">
+                            </button>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="accordion-text">
+                                Да, мы можем адаптировать дизайн торта под ваши пожелания. Обсудите детали с нашим кондитером при оформлении заказа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/faq-right.png" alt="">
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const accordionItems = document.querySelectorAll('.accordion-item');
+                    
+                    accordionItems.forEach(item => {
+                        const header = item.querySelector('.accordion-header');
+                        const content = item.querySelector('.accordion-content');
+                        
+                        header.addEventListener('click', function() {
+                            // Закрываем все остальные элементы
+                            accordionItems.forEach(otherItem => {
+                                if (otherItem !== item) {
+                                    otherItem.classList.remove('active');
+                                    otherItem.querySelector('.accordion-content').style.maxHeight = '0';
+                                }
+                            });
+                            
+                            // Переключаем текущий элемент
+                            const isActive = item.classList.contains('active');
+                            
+                            if (isActive) {
+                                item.classList.remove('active');
+                                content.style.maxHeight = '0';
+                            } else {
+                                item.classList.add('active');
+                                content.style.maxHeight = content.scrollHeight + 'px';
+                            }
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </section>
+
+    <section id="individual-order">
+        <div class="container">
+            <h1>Индивидуальный <br> заказ</h1>
+            <h3>Если вам не подошел торт из каталога,<br> вы можете оформить индивидуальный заказ. <br> Выслушаем ваши идеи, поможем определиться <br> со вкусом и декором.</h3>
+
+            <div class="contact-content">
+                <form action="">
+                    <div class="flex">
+                        <input type="text" placeholder="Имя">
+                        <input type="phone" placeholder="Телефон">
+                    </div>
+                    <input type="email" placeholder="Эл. почта">
+
+                    <div class="custom-select">
+                        <div class="select-header">
+                            <span class="placeholder">Выберите торт из каталога</span>
+                            <span class="arrow"><img src="./img/Frame 109.svg" alt=""></span>
+                        </div>
+                        <div class="select-options">
+                            <div class="options-background"></div>
+                            <div class="options-list">
+                                <!-- Товар 1 -->
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/1.png" alt="Красный бархат">
+                                        <div class="option-text">
+                                            <h4>Красный бархат</h4>
+                                            <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Товар 2 -->
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/2.png" alt="Черничный чизкейк">
+                                        <div class="option-text">
+                                            <h4>Черничный чизкейк</h4>
+                                            <p>Воздушный сливочно-сырный мусс с прослойкой из черничного желе на шоколадно-песочном сабле.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Товар 3 -->
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/3.png" alt="Черемуховый">
+                                        <div class="option-text">
+                                            <h4>Черемуховый</h4>
+                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/3.png" alt="Черемуховый">
+                                        <div class="option-text">
+                                            <h4>Черемуховый</h4>
+                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/3.png" alt="Черемуховый">
+                                        <div class="option-text">
+                                            <h4>Черемуховый</h4>
+                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/3.png" alt="Черемуховый">
+                                        <div class="option-text">
+                                            <h4>Черемуховый</h4>
+                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="option-item">
+                                    <div class="option-content">
+                                        <img src="./img/3.png" alt="Черемуховый">
+                                        <div class="option-text">
+                                            <h4>Черемуховый</h4>
+                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="selected-cake" class="selected-value">
+                    </div>
+                    
+                    <input type="text" placeholder="Событие, дата, комментарии">
+                    <button class="fotm-button">Заказать торт</button>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <p>Я даю свое <a href="">Согласие</a> на обработку персональных данных в соответствии с  <a href="">Политикой обработки персональных данных</a></p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox">
+                        <p>Я соглашаюсь<a href="">Правилами заказа авторских тортов </a></p>
+                    </div>
+                </form>
+                <img src="./img/chernichnyij-chizkej.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-main" id="contacts">
+        <img class="contact-img" src="img/Lab_cake_logo.png" alt="">
+        <div class="container contacts">
+            <h1>Контакты</h1>
+            <div class="flex">
+                <div class="contacts-container">
+                    <div class="contactstext">
+                        <p>+7 900 000-00-00</p>
+                        <p class="contg">hello@torty.com</p>
+                        <p>г. Архангельск, Набережная <br> Северной Двины</p>
+                    </div>
+                    <div class="messangers">
+                        <a href=""><img src="img/vk.svg" alt=""></a>
+                        <a href=""><img src="./img/telegram.svg" alt=""></a>
+                    </div>
+                </div>
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/20/arkhangelsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Архангельск</a>
+                    <a href="https://yandex.ru/maps/20/arkhangelsk/geo/naberezhnaya_severnoy_dviny/23541635/?ll=40.534354%2C64.539589&utm_medium=mapframe&utm_source=maps&z=13.96" style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная Северной Двины в Архангельске — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=40.534354%2C64.539589&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCggyMzU0MTYzNRJW0KDQvtGB0YHQuNGPLCDQkNGA0YXQsNC90LPQtdC70YzRgdC6LCDQvdCw0LHQtdGA0LXQttC90LDRjyDQodC10LLQtdGA0L3QvtC5INCU0LLQuNC90YsiCg1iJCJCFbYPgUI%2C&z=13.96" width="670" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const customSelect = document.querySelector('.custom-select');
+            const selectHeader = customSelect.querySelector('.select-header');
+            const options = customSelect.querySelectorAll('.option-item');
+            const selectedValue = customSelect.querySelector('.selected-value');
+            const placeholder = customSelect.querySelector('.placeholder');
+
+            selectHeader.addEventListener('click', function() {
+                customSelect.classList.toggle('open');
+            });
+
+            options.forEach(option => {
+                option.addEventListener('click', function() {
+                    const title = this.querySelector('h4').textContent;
+                    const description = this.querySelector('p').textContent;
+                    
+                    placeholder.textContent = title;
+                    placeholder.style.color = 'rgba(32, 36, 54, 1)';
+                    selectedValue.value = title;
+                    
+                    customSelect.classList.remove('open');
+                });
+            });
+
+            // Закрытие select при клике вне его
+            document.addEventListener('click', function(e) {
+                if (!customSelect.contains(e.target)) {
+                    customSelect.classList.remove('open');
+                }
+            });
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <img src="./img/logo.svg" alt="">
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#how-order">Как сделать заказ</a></li>
+                        <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                        <li><a href="#individual-order">Индивидуальный заказ</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </nav>
+                    <div class="dog">
+                        <p>@2024</p>
+                        <a href="">Политика обработки персональных данных </a>
+                    </div>
+                    <div class="dog">
+                        <p>Лаборатория тортов </p>
+                        <a href="">Пользовательское соглашение </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+        class Slider {
+            constructor() {
+                this.track = document.querySelector('.slider-track');
+                this.slides = document.querySelectorAll('.slider-img');
+                this.prevButton = document.querySelector('.prev-button');
+                this.nextButton = document.querySelector('.next-button');
+                this.progressFill = document.querySelector('.progress-fill');
+                
+                this.currentSlide = 0;
+                this.isMobile = window.innerWidth <= 767;
+                this.isDragging = false;
+                this.startX = 0;
+                this.currentX = 0;
+                this.initialPosition = 0;
+                this.velocity = 0;
+                this.lastX = 0;
+                this.lastTime = 0;
+                
+                this.init();
+            }
+            
+            init() {
+                this.updateSlider();
+                this.addEventListeners();
+                
+                window.addEventListener('resize', () => {
+                    this.isMobile = window.innerWidth <= 767;
+                    this.updateSlider();
+                });
+            }
+            
+            addEventListeners() {
+                if (this.prevButton && this.nextButton) {
+                    this.prevButton.addEventListener('click', () => this.prev());
+                    this.nextButton.addEventListener('click', () => this.next());
+                }
+                
+                // Всегда добавляем обработчики для touch, но на мобильных они будут более чувствительными
+                this.addTouchListeners();
+            }
+            
+            addTouchListeners() {
+                const sliderContainer = document.querySelector('.slider-container');
+                
+                sliderContainer.addEventListener('touchstart', (e) => {
+                    if (!this.isMobile) return;
+                    
+                    e.preventDefault();
+                    this.startX = e.touches[0].clientX;
+                    this.lastX = this.startX;
+                    this.lastTime = Date.now();
+                    this.isDragging = true;
+                    this.initialPosition = -this.currentSlide * this.getSlideWidth();
+                    this.track.style.transition = 'none';
+                    this.velocity = 0;
+                }, { passive: false });
+                
+                sliderContainer.addEventListener('touchmove', (e) => {
+                    if (!this.isDragging || !this.isMobile) return;
+                    
+                    e.preventDefault();
+                    this.currentX = e.touches[0].clientX;
+                    const currentTime = Date.now();
+                    const diffX = this.startX - this.currentX;
+                    const newPosition = this.initialPosition - diffX;
+                    
+                    // Расчет скорости для инерции
+                    if (currentTime - this.lastTime > 0) {
+                        this.velocity = (this.lastX - this.currentX) / (currentTime - this.lastTime);
+                        this.lastX = this.currentX;
+                        this.lastTime = currentTime;
+                    }
+                    
+                    this.track.style.transform = `translateX(${newPosition}px)`;
+                }, { passive: false });
+                
+                sliderContainer.addEventListener('touchend', (e) => {
+                    if (!this.isDragging || !this.isMobile) return;
+                    
+                    this.isDragging = false;
+                    this.track.style.transition = 'transform 0.3s ease-out';
+                    
+                    const endX = e.changedTouches[0].clientX;
+                    const diffX = this.startX - endX;
+                    const slideWidth = this.getSlideWidth();
+                    
+                    // Учитываем скорость свайпа для определения направления
+                    let swipeThreshold = 30;
+                    const speedThreshold = 0.3;
+                    
+                    // Если скорость высокая, уменьшаем порог
+                    if (Math.abs(this.velocity) > speedThreshold) {
+                        swipeThreshold = 10;
+                    }
+                    
+                    if (Math.abs(diffX) > swipeThreshold || Math.abs(this.velocity) > speedThreshold) {
+                        if (diffX > 0 || this.velocity > speedThreshold) {
+                            this.next();
+                        } else if (diffX < 0 || this.velocity < -speedThreshold) {
+                            this.prev();
+                        } else {
+                            this.updateSlider();
+                        }
+                    } else {
+                        // Если свайп недостаточно сильный, возвращаемся к текущему слайду
+                        this.updateSlider();
+                    }
+                });
+                
+                // Предотвращаем вертикальный скролл при горизонтальном свайпе
+                sliderContainer.addEventListener('touchmove', (e) => {
+                    if (this.isDragging && this.isMobile) {
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+            }
+            
+            getSlideWidth() {
+                if (this.isMobile) {
+                    return window.innerWidth - 100; // Ширина экрана минус отступы
+                }
+                return this.track.parentElement.offsetWidth / 4;
+            }
+            
+            prev() {
+                if (this.currentSlide > 0) {
+                    this.currentSlide--;
+                    this.updateSlider();
+                } else {
+                    // Если это первый слайд, все равно обновляем позицию
+                    this.updateSlider();
+                }
+            }
+            
+            next() {
+                if (this.currentSlide < this.slides.length - 1) {
+                    this.currentSlide++;
+                    this.updateSlider();
+                } else {
+                    // Если это последний слайд, все равно обновляем позицию
+                    this.updateSlider();
+                }
+            }
+            
+            updateSlider() {
+                const slideWidth = this.getSlideWidth();
+                const newPosition = -this.currentSlide * slideWidth;
+                this.track.style.transform = `translateX(${newPosition}px)`;
+                
+                if (this.isMobile && this.progressFill) {
+                    const progress = (this.currentSlide / (this.slides.length - 1)) * 100;
+                    this.progressFill.style.width = `${progress}%`;
+                }
+                
+                if (!this.isMobile && this.prevButton && this.nextButton) {
+                    this.prevButton.disabled = this.currentSlide === 0;
+                    this.nextButton.disabled = this.currentSlide === this.slides.length - 1;
+                }
+            }
+        }
+
+        // Инициализация слайдера когда DOM загружен
+        document.addEventListener('DOMContentLoaded', () => {
+            new Slider();
+        });
+    </script>
+</body>
+</html>
