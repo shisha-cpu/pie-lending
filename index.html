@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section class="bg-main" id="catalog">
+    <section class="bg-main catalog" id="catalog">
         <div class="container">
             <h1>Каталог</h1>
             <div class="catalog-cards">
@@ -166,7 +166,7 @@
     </section>
 
     <section class="bg-main">
-        <div class="container">
+        <div class="container indivcid">
             <h1>индивидуальный декор</h1>
             <div class="slider-container">
                 <div class="slider-images">
@@ -217,6 +217,7 @@
                 </div>
             </div>
         </div>
+           <img class="about-img" src="img/Lab_cake_logo.png" alt="">
     </section>
 
     <section class="howOrder" id="how-order">
@@ -341,114 +342,112 @@
             </script>
         </div>
     </section>
+<section id="individual-order">
+    <div class="container">
+        <h1>Индивидуальный <br> заказ</h1>
+        <h3>Если вам не подошел торт из каталога,<br> вы можете оформить индивидуальный заказ. <br> Выслушаем ваши идеи, поможем определиться <br> со вкусом и декором.</h3>
 
-    <section id="individual-order">
-        <div class="container">
-            <h1>Индивидуальный <br> заказ</h1>
-            <h3>Если вам не подошел торт из каталога,<br> вы можете оформить индивидуальный заказ. <br> Выслушаем ваши идеи, поможем определиться <br> со вкусом и декором.</h3>
-
-            <div class="contact-content">
-                <form action="">
-                    <div class="flex">
-                        <input type="text" placeholder="Имя">
-                        <input type="phone" placeholder="Телефон">
+        <div class="contact-content">
+            <form id="order-form" action="">
+                <div class="flex">
+                    <div class="input-container">
+                        <input type="text" class="nameinput" placeholder="Имя" name="name">
+                        <span class="error-message">* Заполнить</span>
                     </div>
-                    <input type="email" placeholder="Эл. почта">
+                    <div class="input-container">
+                        <input type="phone" placeholder="Телефон" name="phone">
+                        <span class="error-message">* Заполнить</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Эл. почта" name="email">
+                        <span class="error-message">* Заполнить</span>
+                </div>
 
-                    <div class="custom-select">
-                        <div class="select-header">
-                            <span class="placeholder">Выберите торт из каталога</span>
-                            <span class="arrow"><img src="./img/Frame 109.svg" alt=""></span>
-                        </div>
-                        <div class="select-options">
-                            <div class="options-background"></div>
-                            <div class="options-list">
-                                <!-- Товар 1 -->
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/1.png" alt="Красный бархат">
-                                        <div class="option-text">
-                                            <h4>Красный бархат</h4>
-                                            <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
-                                        </div>
+                <div class="custom-select" id="cake-select">
+                    <div class="select-header">
+                        <span class="placeholder">Выберите начинку</span>
+                        <span class="arrow"><img src="./img/arrowa.svg" alt=""></span>
+                    </div>
+                    <div class="select-options">
+                        <div class="options-background"></div>
+                        <div class="options-list">
+                            <div class="option-item" data-value="Красный бархат">
+                                <h4>Красный бархат</h4>
+                                <div class="option-content">
+                                    <img src="./img/1.png" alt="Красный бархат">
+                                    <div class="option-text">
+                                        
+                                        <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
                                     </div>
                                 </div>
-                                <!-- Товар 2 -->
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/2.png" alt="Черничный чизкейк">
-                                        <div class="option-text">
-                                            <h4>Черничный чизкейк</h4>
-                                            <p>Воздушный сливочно-сырный мусс с прослойкой из черничного желе на шоколадно-песочном сабле.</p>
-                                        </div>
+                            </div>
+                              <div class="option-item" data-value="Красный бархат">
+                                <h4>Красный бархат</h4>
+                                <div class="option-content">
+                                    <img src="./img/1.png" alt="Красный бархат">
+                                    <div class="option-text">
+                                        
+                                        <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
                                     </div>
                                 </div>
-                                <!-- Товар 3 -->
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/3.png" alt="Черемуховый">
-                                        <div class="option-text">
-                                            <h4>Черемуховый</h4>
-                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
-                                        </div>
+                            </div>
+                               <div class="option-item" data-value="Красный бархат">
+                                <h4>Красный бархат</h4>
+                                <div class="option-content">
+                                    <img src="./img/1.png" alt="Красный бархат">
+                                    <div class="option-text">
+                                        
+                                        <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
                                     </div>
                                 </div>
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/3.png" alt="Черемуховый">
-                                        <div class="option-text">
-                                            <h4>Черемуховый</h4>
-                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
-                                        </div>
+                            </div>
+                               <div class="option-item" data-value="Красный бархат">
+                                <h4>Красный бархат</h4>
+                                <div class="option-content">
+                                    <img src="./img/1.png" alt="Красный бархат">
+                                    <div class="option-text">
+                                        
+                                        <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
                                     </div>
                                 </div>
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/3.png" alt="Черемуховый">
-                                        <div class="option-text">
-                                            <h4>Черемуховый</h4>
-                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/3.png" alt="Черемуховый">
-                                        <div class="option-text">
-                                            <h4>Черемуховый</h4>
-                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-item">
-                                    <div class="option-content">
-                                        <img src="./img/3.png" alt="Черемуховый">
-                                        <div class="option-text">
-                                            <h4>Черемуховый</h4>
-                                            <p>Бисквит на черемуховой муке с клюквенной пропиткой и прослойкой из сметанного крема с ягодами малины.</p>
-                                        </div>
+                            </div>
+                               <div class="option-item" data-value="Красный бархат">
+                                <h4>Красный бархат</h4>
+                                <div class="option-content">
+                                    <img src="./img/1.png" alt="Красный бархат">
+                                    <div class="option-text">
+                                        
+                                        <p>Классический бисквитный торт на основе какао с прослойкой из сливочно-сырного крема.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="selected-cake" class="selected-value">
                     </div>
-                    
-                    <input type="text" placeholder="Событие, дата, комментарии">
-                    <button class="fotm-button">Заказать торт</button>
-                    <div class="checkbox-container">
-                        <input type="checkbox">
-                        <p>Я даю свое <a href="">Согласие</a> на обработку персональных данных в соответствии с  <a href="">Политикой обработки персональных данных</a></p>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox">
-                        <p>Я соглашаюсь<a href="">Правилами заказа авторских тортов </a></p>
-                    </div>
-                </form>
-                <img src="./img/chernichnyij-chizkej.png" alt="">
-            </div>
+                    <input type="hidden" name="selected-cake" class="selected-value">
+                    <span class="error-message select-error">* Заполнить</span>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" placeholder="Событие, дата, комментарии" name="comments">
+                    <span class="error-message">* Заполнить</span>
+                </div>
+                <button type="submit" class="fotm-button">Заказать торт</button>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="consent">
+                    <p>Я даю свое <a href="">Согласие</a> на обработку персональных данных в соответствии с <a href="">Политикой обработки персональных данных</a></p>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="rules">
+                    <p>Я соглашаюсь с <a href="">Правилами заказа авторских тортов</a></p>
+                </div>
+            </form>
+            <img src="./img/chernichnyij-chizkej.png" alt="">
         </div>
-    </section>
+    </div>
+</section>
+
+
 
 
 
@@ -477,41 +476,208 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const customSelect = document.querySelector('.custom-select');
-            const selectHeader = customSelect.querySelector('.select-header');
-            const options = customSelect.querySelectorAll('.option-item');
-            const selectedValue = customSelect.querySelector('.selected-value');
-            const placeholder = customSelect.querySelector('.placeholder');
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Custom select functionality
+    const customSelect = document.getElementById('cake-select');
+    const selectHeader = customSelect?.querySelector('.select-header');
+    const selectOptions = customSelect?.querySelector('.select-options');
+    const selectPlaceholder = customSelect?.querySelector('.select-header .placeholder');
+    const selectedValue = customSelect?.querySelector('.selected-value');
+    const optionItems = customSelect?.querySelectorAll('.option-item');
 
-            selectHeader.addEventListener('click', function() {
-                customSelect.classList.toggle('open');
-            });
-
-            options.forEach(option => {
-                option.addEventListener('click', function() {
-                    const title = this.querySelector('h4').textContent;
-                    const description = this.querySelector('p').textContent;
-                    
-                    placeholder.textContent = title;
-                    placeholder.style.color = 'rgba(32, 36, 54, 1)';
-                    selectedValue.value = title;
-                    
-                    customSelect.classList.remove('open');
-                });
-            });
-
-            // Закрытие select при клике вне его
-            document.addEventListener('click', function(e) {
-                if (!customSelect.contains(e.target)) {
-                    customSelect.classList.remove('open');
-                }
-            });
+    // Debugging: Verify elements exist
+    if (!customSelect || !selectHeader || !selectOptions || !selectPlaceholder || !selectedValue) {
+        console.error('Select elements not found:', {
+            customSelect,
+            selectHeader,
+            selectOptions,
+            selectPlaceholder,
+            selectedValue
         });
-    </script>
+        return;
+    }
+    console.log('Select initialized successfully:', { customSelect, selectHeader, selectOptions });
+
+    // Toggle select dropdown on header click
+    selectHeader.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation(); // Stop all propagation to prevent interference
+        const wasOpen = customSelect.classList.contains('open');
+        customSelect.classList.toggle('open');
+        const isOpen = customSelect.classList.contains('open');
+        console.log('Select header clicked:', { wasOpen, isOpen, event: e.type });
+        // Force visibility check
+        if (isOpen) {
+            selectOptions.style.display = 'block';
+            console.log('Set select-options display to block');
+        } else {
+            selectOptions.style.display = 'none';
+            console.log('Set select-options display to none');
+        }
+    });
+
+    // Handle option selection
+    optionItems.forEach((item, index) => {
+        item.addEventListener('click', function (e) {
+            e.stopImmediatePropagation();
+            const value = this.getAttribute('data-value');
+            selectPlaceholder.textContent = value;
+            selectPlaceholder.style.color = 'rgba(32, 36, 54, 1)';
+            selectedValue.value = value;
+            customSelect.classList.remove('open');
+            customSelect.classList.remove('error');
+            customSelect.querySelector('.select-error').classList.remove('active');
+            selectOptions.style.display = 'none';
+            console.log('Option selected:', { value, index });
+        });
+    });
+
+    // Close select when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!customSelect.contains(e.target) && customSelect.classList.contains('open')) {
+            customSelect.classList.remove('open');
+            selectOptions.style.display = 'none';
+            console.log('Clicked outside, select closed');
+        }
+    });
+
+    // Prevent form clicks from closing select
+    customSelect.addEventListener('click', function (e) {
+        e.stopPropagation();
+        console.log('Click inside custom-select, propagation stopped');
+    });
+
+    // Form validation
+    const form = document.getElementById('order-form');
+    if (!form) {
+        console.error('Form not found');
+        return;
+    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Reset previous error states
+        const inputs = form.querySelectorAll('input[type="text"], input[type="phone"], input[type="email"]');
+        const select = form.querySelector('.custom-select');
+        const errorMessages = form.querySelectorAll('.error-message');
+
+        inputs.forEach(input => {
+            const container = input.closest('.input-container');
+            const errorMessage = container.querySelector('.error-message');
+            container.classList.remove('error');
+            errorMessage.classList.remove('active');
+
+            if (!input.value.trim()) {
+                container.classList.add('error');
+                errorMessage.classList.add('active');
+                isValid = false;
+                console.log('Input validation failed:', input.name);
+            }
+        });
+
+        // Validate custom select
+        select.classList.remove('error');
+        const selectError = form.querySelector('.select-error');
+        selectError.classList.remove('active');
+
+        if (selectPlaceholder.textContent === 'Выберите начинку') {
+            select.classList.add('error');
+            selectError.classList.add('active');
+            isValid = false;
+            console.log('Select validation failed');
+        }
+
+        if (isValid) {
+            console.log('Form is valid, ready to submit:', {
+                name: form.querySelector('[name="name"]').value,
+                phone: form.querySelector('[name="phone"]').value,
+                email: form.querySelector('[name="email"]').value,
+                cake: selectedValue.value,
+                comments: form.querySelector('[name="comments"]').value
+            });
+            // form.submit(); // Uncomment to submit the form
+        }
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Custom select functionality
+    const selectHeader = document.querySelector('.select-header');
+    const selectOptions = document.querySelector('.select-options');
+    const selectPlaceholder = document.querySelector('.select-header .placeholder');
+    const selectedValue = document.querySelector('.selected-value');
+    const optionItems = document.querySelectorAll('.option-item');
+
+    selectHeader.addEventListener('click', function () {
+        document.querySelector('.custom-select').classList.toggle('open');
+    });
+
+    optionItems.forEach(item => {
+        item.addEventListener('click', function () {
+            const value = this.getAttribute('data-value');
+            selectPlaceholder.textContent = value;
+            selectedValue.value = value;
+            document.querySelector('.custom-select').classList.remove('open');
+            document.querySelector('.custom-select').classList.remove('error');
+            document.querySelector('.select-error').classList.remove('active');
+        });
+    });
+
+    // Form validation
+    const form = document.getElementById('order-form');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Reset previous error states
+        const inputs = form.querySelectorAll('input[type="text"], input[type="phone"], input[type="email"]');
+        const select = form.querySelector('.custom-select');
+        const errorMessages = form.querySelectorAll('.error-message');
+
+        inputs.forEach(input => {
+            const container = input.closest('.input-container');
+            const errorMessage = container.querySelector('.error-message');
+            container.classList.remove('error');
+            errorMessage.classList.remove('active');
+
+            if (!input.value.trim()) {
+                container.classList.add('error');
+                errorMessage.classList.add('active');
+                isValid = false;
+            }
+        });
+
+        // Validate custom select
+        select.classList.remove('error');
+        const selectError = form.querySelector('.select-error');
+        selectError.classList.remove('active');
+
+        if (selectPlaceholder.textContent === 'Выберите начинку') {
+            select.classList.add('error');
+            selectError.classList.add('active');
+            isValid = false;
+        }
+
+        if (isValid) {
+            // If all fields are valid, you can proceed with form submission
+            console.log('Form is valid, ready to submit');
+            // form.submit(); // Uncomment to actually submit the form
+        }
+    });
+
+    // Close select when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!selectHeader.contains(e.target) && !selectOptions.contains(e.target)) {
+            document.querySelector('.custom-select').classList.remove('open');
+        }
+    });
+});
+</script>
     <footer>
-        <div class="container">
+        <div class="">
             <div class="footer-main">
                 <img src="./img/logo.svg" alt="">
                 <div class="footer-content">
