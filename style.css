@@ -99,7 +99,7 @@ main {
     white-space: nowrap;
 }
 .main-content-text button:hover {
-border: 1px solid rgba(158, 172, 238, 1);
+border: 2px solid rgba(158, 172, 238, 1);
 color: rgba(61, 71, 116, 1);
 background-color: #fff;
 transition: all 500ms;
@@ -293,7 +293,7 @@ margin-bottom: 50px;
     gap: 10px;
     padding: 15px 40px;
     box-sizing: border-box;
-    border: 1px solid rgba(158, 172, 238, 1);
+    border: 2px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background: transparent;
     font-family: 'Manrope', sans-serif;
@@ -338,7 +338,7 @@ align-items: center;
 gap: 10;
 padding: 15px 40px 15px 40px;
 box-sizing: border-box;
-border: 1px solid rgba(158, 172, 238, 1);
+border: 2px solid rgba(158, 172, 238, 1);
 color: rgba(61, 71, 116, 1);
 background-color: transparent;
 font-family: 'Manrope', sans-serif;
@@ -362,7 +362,7 @@ cursor: pointer;
     cursor: pointer;
 }
 .slider-buy:hover{
-    border: 1px solid rgba(158, 172, 238, 1);
+    border: 2px solid rgba(158, 172, 238, 1);
 color: rgba(61, 71, 116, 1);
 background-color: #fff;
 transition: all 500ms;
@@ -455,7 +455,7 @@ text-align: left;
     gap: 10px;
     padding: 15px 40px;
     box-sizing: border-box;
-    border: 1px solid rgba(158, 172, 238, 1);
+    border: 2px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background-color: transparent;
     font-family: 'Manrope', sans-serif;
@@ -480,7 +480,7 @@ text-align: left;
 }
 
 .slider-buy:hover {
-    border: 1px solid rgba(158, 172, 238, 1);
+    border: 2px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background-color: #fff;
     transition: all 500ms;
@@ -547,7 +547,7 @@ text-align: left;
     gap: 10px;
     padding: 15px 40px;
     box-sizing: border-box;
-    border: 1px solid rgba(158, 172, 238, 1);
+    border: 2px solid rgba(158, 172, 238, 1);
     color: rgba(61, 71, 116, 1);
     background: transparent;
     font-family: 'Manrope', sans-serif;
@@ -642,7 +642,7 @@ letter-spacing: 2px;
 text-align: left;
 text-transform: uppercase;
 box-sizing: border-box;
-border: 1px solid rgba(158, 172, 238, 1);
+border: 2px solid rgba(158, 172, 238, 1);
 }
 .howOrder-card button:hover{
 background: rgba(203, 211, 248, 1);
@@ -858,7 +858,7 @@ input[type="checkbox"]:checked::after {
             white-space: nowrap;
             padding: 20px 40px 15px 40px;
             box-sizing: border-box;
-            border: 1px solid rgba(158, 172, 238, 1);
+            border: 2px solid rgba(158, 172, 238, 1);
             color: rgba(61, 71, 116, 1);
             background-color: transparent;
             font-family: ''Manrope', sans-serif', sans-serif;
@@ -1336,10 +1336,7 @@ text-align: left;
         gap: 30px;
     }
     
-    .comand-contend p {
-        text-align: center;
-    }
-    
+
     .howOrder-content {
         flex-direction: column;
         gap: 50px;
@@ -1525,7 +1522,7 @@ text-align: left;
     }
     
     .mobile-button:hover {
-        border: 1px solid rgba(158, 172, 238, 1);
+        border: 2px solid rgba(158, 172, 238, 1);
         color: rgba(61, 71, 116, 1);
         background-color: #fff;
         transition: all 500ms;
@@ -1652,7 +1649,7 @@ text-align: left;
     }
     
     .progress-bar {
-        width: 200px;
+        width: 100%;
         height: 3px;
         background: rgba(223, 224, 230, 1);
         border-radius: 2px;
@@ -1722,7 +1719,7 @@ text-align: left;
     left: 30%;
     }
     .howOrder-right-heart{
-        top: 300px !important;
+        top: 340px !important;
         left: 50%;
         z-index: -1;
     }
@@ -2755,7 +2752,7 @@ input::placeholder {
 }
 
 .options-background {
-    background: rgba(194, 200, 227, 0.8);
+    background: rgba(194, 200, 227);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -2834,4 +2831,35 @@ input::placeholder {
     letter-spacing: 0%;
     text-align: left;
     margin: 0;
+}
+
+
+/* Мобильные устройства (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .slider-track {
+        gap: 30px !important; /* Большое расстояние между фото */
+        padding: 0 20px;
+
+    }
+    
+    .slider-img {
+        width: calc(100vw - 100px) !important; /* Широкая картинка */
+        height: 350px !important; /* Высокая картинка */
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+}
+
+/* Маленькие мобильные устройства (до 575px) */
+@media screen and (max-width: 575px) {
+    .slider-track {
+        gap: 20px !important;
+        padding: 0 15px;
+        margin-left: -32px;
+    }
+    
+    .slider-img {
+        width: calc(100vw - 80px) !important;
+        height: 320px !important;
+    }
 }
