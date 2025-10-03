@@ -183,7 +183,7 @@ text-align: left;
 text-transform: uppercase;
 margin-bottom: 40px;
 text-align: center;
-font-style: italic;
+
 }
 .container h3 {
 color: rgba(32, 36, 54, 1);
@@ -2860,6 +2860,6 @@ input::placeholder {
     
     .slider-img {
         width: calc(100vw - 80px) !important;
-        height: 320px !important;
+        height: 380px !important;
     }
 }
