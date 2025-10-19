@@ -172,6 +172,7 @@ transition: all 500ms;
 
 }
 .container h1 {
+        font-family: Cormorant;
     color: rgba(61, 71, 116, 1);
 
 
@@ -189,7 +190,7 @@ text-align: center;
 color: rgba(32, 36, 54, 1);
 
 font-family: Cormorant;
-font-style: italic;
+/* font-style: italic; */
 font-size: 32px;
 font-weight: 400;
 line-height: 39px;
@@ -362,10 +363,9 @@ cursor: pointer;
     cursor: pointer;
 }
 .slider-buy:hover{
-    border: 2px solid rgba(158, 172, 238, 1);
-color: rgba(61, 71, 116, 1);
-background-color: #fff;
-transition: all 500ms;
+ background: rgba(203, 211, 248, 1) !important;
+            color: rgba(61, 71, 116, 1);
+            transition: all 500ms;
 }
 .comand {
     display: flex;
@@ -1227,7 +1227,14 @@ text-align: left;
         width: calc((100% - 60px) / 3);
     }
 }
+.indivcid h1 {
+    margin-left: -10px !important;
 
+}
+.left{
+       margin-left: -5px !important;
+
+}
 /* Планшеты (768px - 991px) */
 @media screen and (max-width: 991px) {
     .container {
@@ -1293,7 +1300,7 @@ text-align: left;
     }
 
     .filisof-section{
-        margin-top: 0px !important;
+        margin-top: -100px !important;
     }
     .container h1 {
         font-size: 40px;
@@ -1499,6 +1506,7 @@ text-align: left;
     padding-left: 10px;
 }
     .mobile-button {
+ 
         width: 270px;
         height: 58px;
         display: flex;
@@ -1508,7 +1516,7 @@ text-align: left;
         gap: 10px;
         padding: 20px 40px;
         box-sizing: border-box;
-        border: 1px solid rgba(197, 205, 243, 1);
+        border: 2px solid rgba(197, 205, 243, 1);
         color: rgba(245, 245, 245, 1);
         background: transparent;
         font-family: 'Manrope', sans-serif;
@@ -1519,6 +1527,9 @@ text-align: left;
         text-transform: uppercase;
         cursor: pointer;
         margin: 0 auto;
+               margin-top: -50px !important;
+             
+               margin-bottom: 50px;
     }
     
     .mobile-button:hover {
@@ -1754,8 +1765,9 @@ text-align: left;
 
     .here-img-pie{
       /* Торт_hero */
-width: 100% !important;
-height: 271px;
+width: 100svw!important;
+min-width: 105svw!important;
+/* height: 271px; */
     }
     .mobile-hero-img .hero-heart-up{
         /* Lab_cake_logo */
@@ -1784,7 +1796,7 @@ right: 10px;
     }
     
     .mobile-title {
-        font-size: 42px;
+        font-size: 44px;
         line-height: 44px;
         margin-bottom: 30px;
 text-align: left;
@@ -1812,6 +1824,7 @@ line-height: 51px;
     .container h1 {
         font-size: 32px;
         line-height: 38px;
+                letter-spacing: 0px !important;
     }
     
     .container h3 {
@@ -1974,6 +1987,7 @@ line-height: 51px;
         width: 180px;
         height: 40px;
         font-size: 16px;
+        margin-top: -50px !important;
     }
     
     .mobile-hero-img .hero-heart-up {
@@ -1995,6 +2009,7 @@ line-height: 51px;
     .container h1 {
         font-size: 28px;
         line-height: 34px;
+
     }
     
     .container h3 {
@@ -2244,14 +2259,15 @@ input::placeholder {
 }
 
 .option-item {
-    padding: 15px 0;
+    padding: 15px 10px !important;
     border-bottom: 1px solid rgba(61, 71, 116, 0.3);
     cursor: pointer;
+    
 }
 .option-item h4{
     color: rgba(61, 71, 116, 1);
 margin-bottom: 10px;
-
+font-family: Arial, Helvetica, sans-serif !important;
 font-size: 24px;
 font-weight: 400;
 line-height: 29px;
@@ -2862,4 +2878,57 @@ input::placeholder {
         width: calc(100vw - 80px) !important;
         height: 380px !important;
     }
+}
+
+.slider-images-action {
+    display: flex;
+    gap: 10px;
+}
+
+.actionButton {
+    position: relative;
+    width:60px;
+    height: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionButton img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow-default {
+    opacity: 1;
+}
+
+.arrow-hover {
+    opacity: 0;
+}
+
+/* Переворачиваем левую стрелку */
+.arrow-hover.flipped {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.actionButton:hover .arrow-default {
+    opacity: 0;
+}
+
+.actionButton:hover .arrow-hover {
+    opacity: 1;
+}
+
+.options-list{
+    background-color: #f5f6fa !important;
 }
